@@ -17,10 +17,10 @@ function App() {
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
+            <Route path="MyPortfolio2/" element={<Home />} />
+            <Route path="MyPortfolio2/about" element={<About />} />
+            <Route path="MyPortfolio2/projects" element={<Projects />} />
+            <Route path="MyPortfolio2/skills" element={<Skills />} />
           </Routes>
         </AnimatePresence>
       </motion.div>
