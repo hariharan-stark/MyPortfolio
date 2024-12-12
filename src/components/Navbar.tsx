@@ -6,17 +6,17 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/skills', label: 'Skills' }
+    { path: 'MyPortfolio2/', label: 'Home' },
+    { path: 'MyPortfolio2/about', label: 'About' },
+    { path: 'MyPortfolio2/projects', label: 'Projects' },
+    { path: 'MyPortfolio2/skills', label: 'Skills' }
   ];
 
   return (
     <nav className="fixed w-full bg-black/10 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <NavLink to="/" className="text-white text-2xl font-semibold">
+          <NavLink to="MyPortfolio2/" className="text-white text-2xl font-semibold">
             Hariharan
           </NavLink>
 
