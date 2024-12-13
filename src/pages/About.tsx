@@ -6,11 +6,12 @@ export default function About() {
   return (
     <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-900 to-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="order-2 md:order-1"
           >
             <h1 className="text-5xl font-bold mb-8">Hariharan</h1>
             <div className="prose prose-invert">
@@ -52,13 +53,14 @@ export default function About() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            // className="relative"
+            className="relative order-1 md:order-2"
           >
             <img
               // src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80"
               src={profileimage}
               alt="Profile"
-              className="rounded-lg shadow-2xl"
+              className="rounded-lg shadow-2xl w-full"
             />
             <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-indigo-600/10 rounded-full -z-10" />
           </motion.div>

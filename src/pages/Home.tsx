@@ -24,7 +24,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl"
+            // style={{ fontFamily: "AbitareSans, sans-serif", fontWeight: '100' }}
+            // className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl font-abitare"
+            className="text-4xl tracking-[0.01em] font-[355] text-white md:text-6xl"
           >
             Product Engineer at TCS
             <span className="block text-indigo-400">
@@ -58,13 +60,14 @@ export default function Home() {
             transition={{ delay: 1.4, duration: 0.8 }}
             className="mt-10 flex gap-4"
           >
-            <Link
-              to="/about"
+            <a
+              // to="/about"
+              href="mailto:hariharantony341@gmail.com"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-300"
             >
               Get in touch
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </div>
