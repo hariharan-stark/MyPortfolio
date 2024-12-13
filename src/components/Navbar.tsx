@@ -1,6 +1,7 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText} from 'lucide-react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import cv from "../files/Hariharan's cv.pdf";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,14 @@ export default function Navbar() {
                 {label}
               </NavLink>
             ))}
+            <a
+              href={cv}
+              download
+              className="flex items-center text-gray-300 hover:text-white transition-colors"
+            >
+              <FileText className="w-4 h-4 mr-2" />
+              Curriculum Vitae
+            </a>
           </div>
 
           <button
@@ -62,6 +71,14 @@ export default function Navbar() {
                 {label}
               </NavLink>
             ))}
+            <a
+              href={cv}
+              download
+              className="flex items-center px-3 py-2 text-gray-300 hover:text-white transition-colors"
+            >
+              <FileText className="w-4 h-4 mr-2" />
+              Curriculum Vitae
+            </a>
           </div>
         </div>
       )}
