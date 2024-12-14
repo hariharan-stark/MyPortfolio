@@ -32,11 +32,11 @@
 
 @layer components {
   .nav-link {
-    @apply text-gray-300 hover:text-white transition-colors duration-300 text-sm uppercase tracking-wider;
+    @apply text-gray-300 hover:text-white transition-colors duration-300 text-sm uppercase tracking-wider font-light;
   }
 
   .nav-link-active {
-    @apply text-white border-b-2 border-indigo-500;
+    @apply text-white border-b border-white/50;
   }
 
   .section-container {
