@@ -2,6 +2,8 @@ import { Menu, X, FileText} from 'lucide-react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import cv from "../files/Hariharan's cv.pdf";
+import MobileNav from './MobileNav';
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +16,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full bg-black/10 backdrop-blur-sm z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <NavLink to="MyPortfolio2/" className="text-white text-2xl font-semibold">
+    <>
+      <nav className="fixed w-full z-50">
+        <div className="absolute inset-0 bg-black/10 backdrop-blur-lg border-bborder-white/1" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <NavLink to="MyPortfolio2/" className="text-white text-2xl font-light tracking-widest mr-12">
             Hariharan
           </NavLink>
 
@@ -27,9 +31,7 @@ export default function Navbar() {
                 key={path}
                 to={path}
                 className={({ isActive }) =>
-                  `text-gray-300 hover:text-white transition-colors ${
-                    isActive ? 'text-white border-b-2 border-indigo-500' : ''
-                  }`
+                    `nav-link ${isActive ? 'nav-link-active' : ''}`
                 }
               >
                 {label}
@@ -48,40 +50,16 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-gray-300 hover:text-white"
+            aria-label="Toggle menu"
+            
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
-
-      {isOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-lg">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {navItems.map(({ path, label }) => (
-              <NavLink
-                key={path}
-                to={path}
-                onClick={() => setIsOpen(false)}
-                className={({ isActive }) =>
-                  `block px-3 py-2 text-gray-300 hover:text-white transition-colors ${
-                    isActive ? 'text-white bg-indigo-500/20' : ''
-                  }`
-                }
-              >
-                {label}
-              </NavLink>
-            ))}
-            <a
-              href={cv}
-              download
-              className="flex items-center px-3 py-2 text-gray-300 hover:text-white transition-colors"
-            >
-              <FileText className="w-4 h-4 mr-2" />
-              Curriculum Vitae
-            </a>
-          </div>
-        </div>
-      )}
     </nav>
+
+      <MobileNav isOpen={isOpen} onClose={() => setIsOpen(false)} />
+    </>
   );
 }
