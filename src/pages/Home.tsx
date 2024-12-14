@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import profileimage1 from '../images/black.png';
-
+import { HeadingXL, BodyText } from '../components/Typography';
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
         >
           <img
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
-            // src={profileimage1}
             alt="Background"
             className="w-full h-full object-cover"
           />
@@ -24,46 +22,40 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="max-w-3xl"
+          className="max-w-4xl"
         >
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            // style={{ fontFamily: "AbitareSans, sans-serif", fontWeight: '100' }}
-            // className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl font-abitare"
-            className="text-4xl tracking-[0.01em] font-[355] text-white md:text-6xl"
-          >
-            Product Engineer at TCS
+          <HeadingXL className="mb-6 text-7xl">
+            Product Engineer at
             <span className="block text-indigo-400">
-              for Digital twin Systems and Analytics
+            TCS for Digital twin Systems and Analytics
             </span>
-          </motion.h1>
+          </HeadingXL>
           
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.8 }}
             className="mt-6 text-xl text-gray-300"
           >
+          <BodyText className="mt-8">
             Designing to help organizations simulate and analyze business scenarios for better decision-making and operational efficiency
-          </motion.p>
+          </BodyText>
+          </motion.p> */}
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.4, duration: 0.8 }}
-            className="mt-10 flex gap-4"
+            className="mt-12"
           >
             <a
-              // to="/about"
               href="mailto:hariharantony341@gmail.com"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-300"
+              className="inline-flex items-center px-7 py-3 text-lg border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors duration-300"
             >
               Get in touch
               <ArrowRight className="ml-2 h-5 w-5" />
