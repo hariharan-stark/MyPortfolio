@@ -55,7 +55,7 @@ export default function Home() {
           >
             <a
               href="mailto:hariharantony341@gmail.com"
-              className="inline-flex items-center px-7 py-3 text-lg border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors duration-300"
+              className="inline-flex items-center px-7 py-3 text-lg backdrop-blur-sm border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors duration-300"
             >
               Get in touch
               <ArrowRight className="ml-2 h-5 w-5" />
