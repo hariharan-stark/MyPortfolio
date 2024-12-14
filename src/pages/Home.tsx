@@ -29,7 +29,7 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="max-w-4xl"
         >
-          <HeadingXL className="mb-6 text-7xl">
+          <HeadingXL className="ml-8 mb-8 text-6xl">
             Product Engineer at
             <span className="block text-indigo-400">
             TCS for Digital twin Systems and Analytics
@@ -55,7 +55,7 @@ export default function Home() {
           >
             <a
               href="mailto:hariharantony341@gmail.com"
-              className="inline-flex items-center px-7 py-3 text-lg backdrop-blur-sm border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors duration-300"
+              className="ml-8 inline-flex items-center px-7 py-3 text-lg backdrop-blur-sm border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors duration-300"
             >
               Get in touch
               <ArrowRight className="ml-2 h-5 w-5" />
