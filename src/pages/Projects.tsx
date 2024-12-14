@@ -5,7 +5,7 @@ import { Calendar } from 'lucide-react';
 
 const projects = [
   {
-    title: "Research Analyst Assistant",
+    title: "Research Analyst Assistant AI",
     description: [`The AI-driven system you developed provides significant value by automating and streamlining data analysis for strategic decision-making. By leveraging advanced agentic architectures like <span class="text-blue-600">LangChain</span>, <span class="text-blue-600">LangGraph</span>, and techniques such as <span class="text-blue-600">ReAct</span> and <span class="text-blue-600">RAG</span>, the system efficiently interprets complex datasets and generates actionable insights that would otherwise be time-consuming to extract.`, `The real-time market insights, enabled by <span class="text-blue-600">Tavily</span>’s news search, ensure that decision-makers are always up-to-date with the latest developments, allowing them to respond quickly to market fluctuations.`, 
     `Additionally, the system’s ability to retrieve detailed company profiles (e.g., market cap, earnings, margins) and perform <span class="text-blue-600">SQL</span>-based stock data analysis enhances the accuracy of financial forecasts and investment decisions. With integrated <span class="text-blue-600">Python</span> analytics and visualization tools, users can gain deeper insights through advanced data exploration, making it easier to spot trends and make informed business decisions.`, 
     `This combination of speed, automation, and <span class="text-blue-600">data-driven intelligence</span> makes the system indispensable for executives, analysts, and decision-makers aiming to stay ahead in competitive markets.
