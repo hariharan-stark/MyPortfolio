@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
-// import ProjectCard from '../components/ProjectCard';
 // import researchAiImage from '../images/researchai.webp';
 // import researchAiImage2 from '../images/researchai2.webp';
 
@@ -25,32 +24,6 @@ const projects = [
   }
 ];
 
-// export default function Projects() {
-//   return (
-//     <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-900 to-black">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.5 }}
-//           className="text-center mb-16"
-//         >
-//           <h1 className="text-5xl font-bold text-white mb-4">Projects</h1>
-//           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-//             A collection of research projects and technical implementations
-//             in machine learning, optimization, and data analytics.
-//           </p>
-//         </motion.div>
-
-//         <div className="grid md:grid-cols-2 gap-8">
-//           {projects.map((project, index) => (
-//             <ProjectCard key={index} {...project} index={index} />
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 
 export default function Projects() {
