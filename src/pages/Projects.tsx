@@ -29,14 +29,14 @@ const projects = [
 export default function Projects() {
   return (
     <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-900 to-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h1 className="text-5xl font-bold text-white mb-4">Personal Projects</h1>
+          <h1 className="text-5xl font-light text-white mb-4">Personal Projects</h1>
           <p className="text-2xl text-gray-400">
             {projects.length} projects
           </p>

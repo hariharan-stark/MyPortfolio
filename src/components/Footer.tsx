@@ -5,8 +5,9 @@ import cv from "../files/Hariharan's cv.pdf";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    // <footer className="bg-gradient-to-b from-black to-gray-900 text-gray-300 py-12">
+    <footer className="bg-gradient-to-b from-black to-gray-900 text-gray-300 py-12 border-t-2 border-gray-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Brand and Navigation */}
           <div>

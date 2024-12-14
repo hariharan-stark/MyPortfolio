@@ -5,7 +5,7 @@ import profileimage from '../images/blac2.png'
 export default function About() {
   return (
     <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-900 to-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -15,10 +15,10 @@ export default function About() {
           >
             <h1 className="text-white text-5xl font-light tracking-widest mb-8">Hariharan</h1>
             <div className="prose prose-invert">
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="text-gray-300 leading-relaxed mb-6">
               Hello! I am an experienced product team member with over three years in web application development, specializing in Python scripting, machine learning, and backend technologies. My work has spanned industrial domains, each offering unique challenges that I have tackled with advanced analytics, machine learning, and optimization techniques. I've worked on integrating generative AI solutions with digital twins and simulation models data.
               </p>
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="text-gray-300 leading-relaxed mb-6">
               My expertise also extends to leveraging data insights for business optimization, such as improving customer retention and supply chain performance. I am continually driven to develop innovative, data-driven solutions to real-world challenges across multiple sectors.
               </p>
             </div>

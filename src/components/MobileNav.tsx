@@ -163,7 +163,7 @@ return (
             </div>
             <div className="fixed inset-x-0 top-40 h-[100vh]">
             {/* Navigation Items */}
-            <div className="flex-grow flex flex-col justify-center space-y-8 px-12">
+            <div className="flex-grow flex flex-col justify-center space-y-8 px-8">
               {navItems.map((item, i) => (
                 <motion.div
                   key={item.path}
@@ -187,7 +187,7 @@ return (
             </div>
 
             {/* CV Download */}
-            <div className="px-12">
+            <div className="px-8">
               <motion.div
                 variants={itemVariants}
                 transition={{ delay: navItems.length * 0.1 }}
