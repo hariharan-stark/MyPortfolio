@@ -13,7 +13,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="order-2 md:order-1"
           >
-            <h1 className="text-white text-5xl font-light tracking-widest mb-8">Hariharan</h1>
+            <h1 className="text-white text-5xl font-light tracking-wider mb-8">Hariharan</h1>
             <div className="prose prose-invert">
               <p className="text-gray-300 leading-relaxed mb-6">
               Hello! I am an experienced product team member with over three years in web application development, specializing in Python scripting, machine learning, and backend technologies. My work has spanned industrial domains, each offering unique challenges that I have tackled with advanced analytics, machine learning, and optimization techniques. I've worked on integrating generative AI solutions with digital twins and simulation models data.

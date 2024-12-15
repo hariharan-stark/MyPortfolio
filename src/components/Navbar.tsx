@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="absolute inset-0 bg-black/10 backdrop-blur-lg border-bborder-white/1" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 mt-8">
-            <NavLink to="MyPortfolio2/" className="text-white text-3xl font-light tracking-widest mr-12">
+            <NavLink to="MyPortfolio2/" className="text-white text-3xl font-light tracking-wider mr-12">
               Hariharan
             </NavLink>
 

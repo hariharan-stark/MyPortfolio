@@ -30,7 +30,7 @@ export default function Home() {
           className="max-w-4xl"
         >
           <HeadingXL
-            className="ml-8 mb-10 text-6xl font-light leading-[4rem]">
+            className="ml-8 mb-10 text-6xl font-light tracking-wide leading-[4rem]">
             Product Engineer at
             <span className="block text-indigo-400">
               TCS for Digital twin Systems and Analytics

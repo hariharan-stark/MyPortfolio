@@ -25,9 +25,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Brand and Navigation */}
             <div>
-              <Link to="MyPortfolio2/" className="text-xl font-semibold text-white relative inline-block">
+              <Link to="MyPortfolio2/" className="text-xl font-semibold text-white tracking-wider relative inline-block">
                 Hariharan
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white"></span> {/* Underline */}
+                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white"></span> {/* Underline */}
               </Link>
               <nav className="mt-4 space-y-2">
                 <Link to="/MyPortfolio2/about" className="block hover:text-white">
@@ -50,9 +50,9 @@ export default function Footer() {
 
             {/* Social Links */}
             <div>
-              <h3 className="text-white font-semibold mb-4 relative inline-block">
+              <h3 className="text-white font-semibold mb-4 tracking-wider relative inline-block">
                 Connect
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white"></span> {/* Underline */}
+                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white"></span> {/* Underline */}
               </h3>
               <div className="space-y-2">
                 <a
