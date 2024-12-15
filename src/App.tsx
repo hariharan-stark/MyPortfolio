@@ -20,14 +20,14 @@ import Footer from './components/Footer';
 //         <main className="flex-grow">
 //         <AnimatePresence mode="wait">
 //           <Routes>
-//             <Route path="MyPortfolio2/" element={<Home />} />
-//             <Route path="MyPortfolio2/about" element={<About />} />
-//             <Route path="MyPortfolio2/projects" element={<Projects />} />
-//             <Route path="MyPortfolio2/skills" element={<Skills />} />
+//             <Route path="MyPortfolio/" element={<Home />} />
+//             <Route path="MyPortfolio/about" element={<About />} />
+//             <Route path="MyPortfolio/projects" element={<Projects />} />
+//             <Route path="MyPortfolio/skills" element={<Skills />} />
 //           </Routes>
 //         </AnimatePresence>
 //         </main>
-//         {location.pathname !== "MyPortfolio2/" && <Footer />}
+//         {location.pathname !== "MyPortfolio/" && <Footer />}
 //       </motion.div>
 //     </Router>
 //   );
@@ -51,14 +51,14 @@ function App() {
       <main className="flex-grow">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route path="/MyPortfolio2/" element={<Home />} />
-            <Route path="/MyPortfolio2/about" element={<About />} />
-            <Route path="/MyPortfolio2/projects" element={<Projects />} />
-            <Route path="/MyPortfolio2/skills" element={<Skills />} />
+            <Route path="/MyPortfolio/" element={<Home />} />
+            <Route path="/MyPortfolio/about" element={<About />} />
+            <Route path="/MyPortfolio/projects" element={<Projects />} />
+            <Route path="/MyPortfolio/skills" element={<Skills />} />
           </Routes>
         </AnimatePresence>
       </main>
-      {location.pathname !== "/MyPortfolio2/" && <Footer />}
+      {location.pathname !== "/MyPortfolio/" && <Footer />}
     </motion.div>
   );
 }

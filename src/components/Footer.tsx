@@ -25,18 +25,18 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Brand and Navigation */}
             <div>
-              <Link to="MyPortfolio2/" className="text-xl font-semibold text-white tracking-wider relative inline-block">
+              <Link to="MyPortfolio/" className="text-xl font-semibold text-white tracking-wider relative inline-block">
                 Hariharan
                 <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white"></span> {/* Underline */}
               </Link>
               <nav className="mt-4 space-y-2">
-                <Link to="/MyPortfolio2/about" className="block hover:text-white">
+                <Link to="/MyPortfolio/about" className="block hover:text-white">
                   About
                 </Link>
-                <Link to="/MyPortfolio2/projects" className="block hover:text-white">
+                <Link to="/MyPortfolio/projects" className="block hover:text-white">
                   Projects
                 </Link>
-                <Link to="/MyPortfolio2/skills" className="block hover:text-white">
+                <Link to="/MyPortfolio/skills" className="block hover:text-white">
                   Skills
                 </Link>
               </nav>

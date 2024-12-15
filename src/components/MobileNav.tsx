@@ -10,9 +10,9 @@ interface MobileNavProps {
 
 export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
   const navItems = [
-    { path: 'MyPortfolio2/about', label: 'About' },
-    { path: 'MyPortfolio2/projects', label: 'Projects' },
-    { path: 'MyPortfolio2/skills', label: 'Skills' }
+    { path: 'MyPortfolio/about', label: 'About' },
+    { path: 'MyPortfolio/projects', label: 'Projects' },
+    { path: 'MyPortfolio/skills', label: 'Skills' }
   ];
 
   const menuVariants = {
@@ -52,7 +52,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
               {/* Header */}
               <NavLink
                 onClick={onClose}
-                to="MyPortfolio2/"
+                to="MyPortfolio/"
                 className="text-white text-4xl font-light tracking-wider"
               >
                 Hariharan
