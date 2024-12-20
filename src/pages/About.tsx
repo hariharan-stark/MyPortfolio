@@ -16,7 +16,7 @@ export default function About() {
             <h1 className="text-white text-5xl font-light tracking-wider mb-8">Hariharan</h1>
             <div className="prose prose-invert">
               <p className="text-gray-300 leading-relaxed mb-6">
-              Hello! I am an experienced product team member with over three years in web application development, specializing in Python scripting, machine learning, and backend technologies. My work has spanned industrial domains, each offering unique challenges that I have tackled with advanced analytics, machine learning, and optimization techniques. I've worked on integrating generative AI solutions with digital twins and simulation models data.
+              Hello! I am an experienced Product Research Engineer with over three years in web application development, specializing in Python scripting, machine learning, and backend technologies. My work has spanned industrial domains, each offering unique challenges that I have tackled with advanced analytics, machine learning, and optimization techniques. I've worked on integrating generative AI solutions with digital twins and simulation models data.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
               My expertise also extends to leveraging data insights for business optimization, such as improving customer retention and supply chain performance. I am continually driven to develop innovative, data-driven solutions to real-world challenges across multiple sectors.
@@ -76,15 +76,15 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/5 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-2">B.E - Mechanical Engineer</h3>
-              <p className="text-gray-400">RMK Engineering College</p>
-              <p className="text-sm text-gray-400 mb-2">Sep 2017 - Aug 2021</p>
-              <p className="text-gray-400">CGPA - 8.3</p>
+              <p className="text-gray-400 font-light">RMK Engineering College</p>
+              <p className="text-sm text-gray-400 font-light mb-2">Sep 2017 - Aug 2021</p>
+              <p className="text-gray-400 font-light">CGPA - 8.3</p>
             </div>
             <div className="bg-white/5 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-2">Higher Secondary School</h3>
-              <p className="text-gray-400">I.V.L. Matric. Hr. Sec. School</p>
-              <p className="text-sm text-gray-400 mb-2">2016 - 2017</p>
-              <p className="text-gray-400">Percentage - 88%</p>
+              <p className="text-gray-400 font-light">I.V.L. Matric. Hr. Sec. School</p>
+              <p className="text-sm text-gray-400 font-light mb-2">2016 - 2017</p>
+              <p className="text-gray-400 font-light">Percentage - 88%</p>
             </div>
           </div>
         </motion.div>

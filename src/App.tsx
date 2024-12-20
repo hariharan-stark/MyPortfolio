@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Footer from './components/Footer';
@@ -53,6 +54,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/MyPortfolio/" element={<Home />} />
             <Route path="/MyPortfolio/about" element={<About />} />
+            <Route path="/MyPortfolio/experience" element={<Experience />} />
             <Route path="/MyPortfolio/projects" element={<Projects />} />
             <Route path="/MyPortfolio/skills" element={<Skills />} />
           </Routes>

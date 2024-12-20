@@ -1,7 +1,7 @@
 import { Menu, X, FileText } from 'lucide-react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import cv from "../files/Hariharan's cv.pdf";
+import cv from "../files/Hariharan_cv.pdf";
 import MobileNav from './MobileNav';
 
 
@@ -11,6 +11,7 @@ export default function Navbar() {
   const navItems = [
     // { path: 'MyPortfolio/', label: 'Home' },
     { path: 'MyPortfolio/about', label: 'About' },
+    { path: 'MyPortfolio/experience', label: 'Experience' },
     { path: 'MyPortfolio/projects', label: 'Projects' },
     { path: 'MyPortfolio/skills', label: 'Skills' }
   ];
@@ -25,7 +26,7 @@ export default function Navbar() {
               Hariharan
             </NavLink>
 
-            <div className="hidden md:flex flex-grow justify-center space-x-12">
+            <div className="hidden md:flex flex-grow justify-center space-x-10">
               {navItems.map(({ path, label }) => (
                 <NavLink
                   key={path}
@@ -42,7 +43,7 @@ export default function Navbar() {
               <a
                 href={cv}
                 download
-                className="flex items-center text-gray-300 hover:text-white transition-colors"
+                className="flex items-center text-lg text-gray-300 hover:text-white transition-colors"
               >
                 <FileText className="w-4 h-4 mr-2" />
                 Curriculum Vitae

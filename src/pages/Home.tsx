@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { HeadingXL, BodyText } from '../components/Typography';
+import backgroundImage from '../images/bg-image.jpg'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         >
           <img
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+            // src={backgroundImage}
             alt="Background"
             className="w-full h-full object-cover"
           />

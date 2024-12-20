@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { FileText } from 'lucide-react';
-import cv from "../files/Hariharan's cv.pdf";
+import cv from "../files/Hariharan_cv.pdf";
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -11,6 +11,7 @@ interface MobileNavProps {
 export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
   const navItems = [
     { path: 'MyPortfolio/about', label: 'About' },
+    { path: 'MyPortfolio/experience', label: 'Experience' },
     { path: 'MyPortfolio/projects', label: 'Projects' },
     { path: 'MyPortfolio/skills', label: 'Skills' }
   ];

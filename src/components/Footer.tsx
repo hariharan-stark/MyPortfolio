@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, Phone, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import cv from "../files/Hariharan's cv.pdf";
+import cv from "../files/Hariharan_cv.pdf";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -33,6 +33,9 @@ export default function Footer() {
                 <Link to="/MyPortfolio/about" className="block hover:text-white">
                   About
                 </Link>
+                <Link to="/MyPortfolio/experience" className="block hover:text-white">
+                  Experience
+                </Link>
                 <Link to="/MyPortfolio/projects" className="block hover:text-white">
                   Projects
                 </Link>
@@ -42,8 +45,8 @@ export default function Footer() {
               </nav>
 
               <div className="mt-1 space-y-2">
-                <a href={cv} download className="block hover:text-white">
-                  Curriculum Vitae
+                <a href={cv} download className="block hover:text-white flex items-center">
+                <FileText className="w-4 h-4 mr-2" />Curriculum Vitae
                 </a>
               </div>
             </div>

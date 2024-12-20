@@ -6,9 +6,9 @@ import { Calendar } from 'lucide-react';
 const projects = [
   {
     title: "Research Analyst Assistant AI",
-    description: [`The AI-driven system you developed provides significant value by automating and streamlining data analysis for strategic decision-making. By leveraging advanced agentic architectures like <span class="text-blue-600">LangChain</span>, <span class="text-blue-600">LangGraph</span>, and techniques such as <span class="text-blue-600">ReAct</span> and <span class="text-blue-600">RAG</span>, the system efficiently interprets complex datasets and generates actionable insights that would otherwise be time-consuming to extract.`, `The real-time market insights, enabled by <span class="text-blue-600">Tavily</span>’s news search, ensure that decision-makers are always up-to-date with the latest developments, allowing them to respond quickly to market fluctuations.`, 
-    `Additionally, the system’s ability to retrieve detailed company profiles (e.g., market cap, earnings, margins) and perform <span class="text-blue-600">SQL</span>-based stock data analysis enhances the accuracy of financial forecasts and investment decisions. With integrated <span class="text-blue-600">Python</span> analytics and visualization tools, users can gain deeper insights through advanced data exploration, making it easier to spot trends and make informed business decisions.`, 
-    `This combination of speed, automation, and <span class="text-blue-600">data-driven intelligence</span> makes the system indispensable for executives, analysts, and decision-makers aiming to stay ahead in competitive markets.
+    description: [`The AI-driven system you developed provides significant value by automating and streamlining data analysis for strategic decision-making. By leveraging advanced agentic architectures like <span class="font-medium text-blue-600">LangChain</span>, <span class="font-medium text-blue-600">LangGraph</span>, and techniques such as <span class="font-medium text-blue-600">ReAct</span> and <span class="font-medium text-blue-600">RAG</span>, the system efficiently interprets complex datasets and generates actionable insights that would otherwise be time-consuming to extract.`, `The real-time market insights, enabled by <span class="font-medium text-blue-600">Tavily</span>’s news search, ensure that decision-makers are always up-to-date with the latest developments, allowing them to respond quickly to market fluctuations.`, 
+    `Additionally, the system’s ability to retrieve detailed company profiles (e.g., market cap, earnings, margins) and perform <span class="font-medium text-blue-600">SQL</span>-based stock data analysis enhances the accuracy of financial forecasts and investment decisions. With integrated <span class="font-medium text-blue-600">Python</span> analytics and visualization tools, users can gain deeper insights through advanced data exploration, making it easier to spot trends and make informed business decisions.`, 
+    `This combination of speed, automation, and <span class="font-medium text-blue-600">data-driven intelligence</span> makes the system indispensable for executives, analysts, and decision-makers aiming to stay ahead in competitive markets.
 
       `],
     date: "July, 2024 - September, 2024",
@@ -35,9 +35,10 @@ export default function Projects() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="mb-16"
+          // className="text-center mb-16"
         >
           <h1 className="text-5xl font-light text-white mb-4">Personal Projects</h1>
-          <p className="text-2xl text-gray-400">
+          <p className="text-lg text-gray-400">
             {projects.length} projects
           </p>
           {/* <p className="text-xl text-gray-400">
@@ -46,14 +47,14 @@ export default function Projects() {
           </p> */}
         </motion.div>
 
-        <div className="space-y-20">
+        <div className="space-y-8">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="grid grid-cols-1 md:grid-cols-[300px,1fr] gap-8 md:gap-12"
+              className="grid grid-cols-1 md:grid-cols-[300px,1fr] gap-8 md:gap-12 bg-white/0 border border-white/10 rounded-xl p-8 hover:bg-white/5 hover:border-white/5 transition-all duration-300"
             >
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold text-white">
@@ -67,7 +68,7 @@ export default function Projects() {
               <div className="text-gray-300 leading-relaxed">
                 {/* {project.description} */}
                 {/* <span dangerouslySetInnerHTML={{ __html: project.description }} ></span> */}
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 font-light mb-4">
                   {project.description.map((point, pointIndex) => (
                       <li key=  {pointIndex} className="mb-2">
                         <span dangerouslySetInnerHTML={{ __html: point }} />
