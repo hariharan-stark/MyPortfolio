@@ -1,7 +1,7 @@
 import { Menu, X, FileText } from 'lucide-react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import cv from "../files/Hariharan_cv.pdf";
+import cv from "../files/Hariharan_resume.pdf";
 import MobileNav from './MobileNav';
 
 

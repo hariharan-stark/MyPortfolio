@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { FileText } from 'lucide-react';
-import cv from "../files/Hariharan_cv.pdf";
+import cv from "../files/Hariharan_resume.pdf";
 
 interface MobileNavProps {
   isOpen: boolean;
