@@ -79,6 +79,18 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                   >
                     {item.label}
                   </NavLink>
+                  {/* <NavLink
+                    to={item.path}
+                    onClick={onClose}
+                    className={({ isActive }) =>
+                      `relative inline-block text-3xl font-extralight tracking-widest ${isActive
+                        ? "text-white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-8px] after:h-[2px] after:bg-gradient-to-r after:from-black after:to-gray-400   after:w-full"
+                        : "text-gray-300"
+                      } hover:text-white transition-colors duration-200`
+                    }
+                  >
+                    {item.label}
+                  </NavLink> */}
                 </motion.div>
               ))}
             </div>
