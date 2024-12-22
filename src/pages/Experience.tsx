@@ -39,7 +39,7 @@ export const experiences = [
       "Data science",
       "Machine Learning",
       "Data Analysis",
-      "Fast APi",
+      "Fast API",
       "Apache Kafka & Nifi",
       "PostgreSQL"
     ]
