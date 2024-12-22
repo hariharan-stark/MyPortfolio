@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, Phone, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import cv from "../files/Hariharan_resume.pdf";
+import cv from "../files/Hariharan_cv.pdf";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
