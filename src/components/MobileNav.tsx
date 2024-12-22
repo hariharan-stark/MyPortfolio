@@ -73,7 +73,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     to={item.path}
                     onClick={onClose}
                     className={({ isActive }) =>
-                      `block text-3xl font-extralight tracking-widest ${isActive ? "text-white" : "text-gray-300"
+                      `block text-3xl font-extralight tracking-widest ${isActive ? "text-white underline decoration-1 underline-offset-8 decoration-white" : "text-gray-300"
                       } hover:text-white transition-colors duration-200`
                     }
                   >
